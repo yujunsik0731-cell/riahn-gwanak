@@ -414,3 +414,13 @@ footer .biz a{color:inherit}
 
 /* 일본어·중국어: keep-all 은 띄어쓰기 없는 문장을 줄바꿈하지 못해 가로 넘침이 생긴다 */
 html[lang="ja"] body,html[lang="zh-CN"] body{word-break:normal;overflow-wrap:anywhere;line-break:strict}
+
+/* 네이버 예약 할인 안내 띠 (가격표 바로 위 · 홈 시술 카드 위) */
+.naver-discount{display:flex;align-items:center;justify-content:space-between;gap:12px 18px;flex-wrap:wrap;background:var(--accent-dark);color:#fff;padding:14px 18px;margin-bottom:14px;border-radius:2px}
+.naver-discount p{font-size:15px;line-height:1.5}
+.naver-discount strong{font-size:16.5px;letter-spacing:.02em}
+.naver-discount span{opacity:.9;font-size:13.5px;white-space:nowrap}
+.naver-discount .btn{padding:9px 18px;font-size:14px;background:#fff;color:var(--accent-dark);flex-shrink:0}
+.naver-discount .btn:hover{background:var(--bg)}
+.price-table + .naver-discount{margin-top:14px}
+@media(max-width:480px){.naver-discount .btn{width:100%}}
