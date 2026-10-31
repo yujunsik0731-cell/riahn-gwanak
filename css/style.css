@@ -424,3 +424,6 @@ html[lang="ja"] body,html[lang="zh-CN"] body{word-break:normal;overflow-wrap:any
 .naver-discount .btn:hover{background:var(--bg)}
 .price-table + .naver-discount{margin-top:14px}
 @media(max-width:480px){.naver-discount .btn{width:100%}}
+
+/* 푸터 SNS 링크 4개(인스타·네이버 플레이스·구글 지도·당근): 좁은 화면에서 줄바꿈 */
+.footer-sns{flex-wrap:wrap;row-gap:10px}
